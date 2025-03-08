@@ -1,0 +1,30 @@
+@function hexToRGBA($hex, $opacity: 1) {
+	$r: red($hex);
+	$g: green($hex);
+	$b: blue($hex);
+	@return rgba($r, $g, $b, $opacity);
+}
+
+/* Typography
+---------------------------------------------- */
+@import "typography/typography";
+
+/* Elements
+---------------------------------------------- */
+@import "elements/body";
+
+/* Links
+---------------------------------------------- */
+@import "elements/links";
+
+/* button
+---------------------------------------------- */
+@import "elements/button";
+
+/* Table
+---------------------------------------------- */
+@import "elements/table";
+
+/* Wordpress Generate Requirement.
+---------------------------------------------- */
+@import "elements/wp_generated";
