@@ -1,0 +1,225 @@
+.slick-slider {
+	.slick-track {
+		margin-left: 0;
+	}
+	.slick-dots {
+		bottom: -43px;
+		li {
+			width: 6px;
+			height: 6px;
+			border-radius: 100%;
+			padding: 0;
+			margin: 0 8px;
+			&:hover,
+			&.slick-active {
+				button {
+					background: var(--rbb-general-secondary-color);
+					transform: scale(1.5);
+				}
+			}
+			button {
+				position: relative;
+				width: 6px;
+				height: 6px;
+				padding: 0;
+				border-radius: 100%;
+				text-indent: -999999px;
+				transition: all 0.35s linear;
+				background: var(--rbb-general-body-text-color);
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+	&.dots-style2 {
+		.slick-dots {
+			li {
+				button {
+					background: var(--rbb-general-secondary-color);
+				}
+				&.slick-active {
+					button {
+						background: var(--rbb-general-primary-color);
+					}
+				}
+			}
+		}
+	}
+	.slick-arrow {
+		height: 53px;
+		width: 53px;
+		margin-top: -5px;
+		border-radius: 100%;
+		background: #fff !important;
+		border: 1px solid var(--rbb-general-button-bg-color);
+		box-shadow: 3px 4px 8px 0 rgb(0 0 0 / 10%);
+		transition: all 0.5s ease;
+		z-index: 9;
+		@media (max-width: 767px) {
+			display: none !important;
+		}
+		&::after,
+		&::before {
+			content: "";
+			width: 10px;
+			height: 1px;
+			position: absolute;
+			top: 50%;
+			background: #000;
+			transition: transform 0.5s ease;
+		}
+		&.slick-disabled {
+			opacity: 0.7;
+			cursor: not-allowed;
+		}
+		&:hover {
+			border: 1px solid var(--rbb-general-primary-color);
+			background: var(--rbb-general-primary-color) !important;
+		}
+		&.slick-next {
+			right: 0;
+			&::before {
+				left: 47%;
+				transform: rotate(-45deg) translate(-50%, -50%);
+			}
+			&::after {
+				left: 47%;
+				transform: rotate(45deg) translate(-50%, 50%);
+			}
+			&.slick-disabled {
+				&::after,
+				&::before {
+					left: 50%;
+					transform: rotate(0deg) translate(-50%, -50%) !important;
+				}
+			}
+			&:hover {
+				&::before {
+					background: #fff;
+					transform: rotate(-30deg) translate(-50%, -50%);
+				}
+				&::after {
+					background: #fff;
+					transform: rotate(30deg) translate(-50%, 50%);
+				}
+			}
+		}
+		&.slick-prev {
+			left: 0;
+			&::before {
+				right: 47%;
+				transform: rotate(-135deg) translate(-50%, -50%);
+			}
+			&::after {
+				right: 47%;
+				transform: rotate(135deg) translate(-50%, 50%);
+			}
+			&.slick-disabled {
+				&::after {
+					right: 50%;
+					transform: rotate(180deg) translate(-50%, -50%) !important;
+				}
+				&::before {
+					right: 50%;
+					transform: rotate(-180deg) translate(-50%, -50%) !important;
+				}
+			}
+			&:hover {
+				&::before {
+					background: #fff;
+					transform: rotate(-150deg) translate(-50%, -50%);
+				}
+				&::after {
+					background: #fff;
+					transform: rotate(150deg) translate(-50%, 50%);
+				}
+			}
+		}
+	}
+}
+.slick-arrow-custom,
+.arrow-custom,
+.slick-arrow {
+	transition: all 0.5s ease;
+	.prev_custom,
+	.next_custom {
+		width: 10px;
+		position: relative;
+		transition: all 0.5s linear;
+		opacity: 1 !important;
+		visibility: visible !important;
+		&.swiper-button-disabled {
+			opacity: 0.7 !important;
+			cursor: not-allowed !important;
+		}
+		&::after,
+		&::before {
+			content: "";
+			width: 10px;
+			height: 1px;
+			position: absolute;
+			top: 50%;
+			background: #000;
+			transition: transform 0.5s ease;
+		}
+	}
+	.next_custom {
+		&::before {
+			left: 47%;
+			transform: rotate(-45deg) translate(-50%, -50%);
+		}
+		&::after {
+			left: 47%;
+			transform: rotate(45deg) translate(-50%, 50%);
+		}
+		&:hover {
+			&::before {
+				background-color: var(--rbb-general-primary-color);
+				transform: rotate(-30deg) translate(-50%, -50%);
+			}
+			&::after {
+				background-color: var(--rbb-general-primary-color);
+				transform: rotate(30deg) translate(-50%, 50%);
+			}
+		}
+		&.swiper-button-disabled {
+			&::after,
+			&::before {
+				left: 50%;
+				transform: rotate(0deg) translate(-50%, -50%) !important;
+			}
+		}
+	}
+	.prev_custom {
+		&::before {
+			right: 47%;
+			transform: rotate(-135deg) translate(-42%, -50%);
+		}
+		&::after {
+			right: 47%;
+			transform: rotate(135deg) translate(-42%, 50%);
+		}
+		&:hover {
+			&::before {
+				background-color: var(--rbb-general-primary-color);
+				transform: rotate(-150deg) translate(-42%, -50%);
+			}
+			&::after {
+				background-color: var(--rbb-general-primary-color);
+				transform: rotate(150deg) translate(-42%, 50%);
+			}
+		}
+		&.swiper-button-disabled {
+			&::after {
+				right: 50%;
+				transform: rotate(180deg) translate(-50%, -50%) !important;
+			}
+			&::before {
+				right: 50%;
+				transform: rotate(-180deg) translate(-50%, -50%) !important;
+			}
+		}
+	}
+
+}
