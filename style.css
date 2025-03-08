@@ -1,0 +1,29 @@
+/*!
+Theme Name: Ecommax
+Theme URI: https://ecommax.risingbamboo.com/
+Author: Rising Bamboo
+Author URI: https://risingbamboo.com
+Description: Ecommax WooCommerce Theme is a versatile and modern eCommerce theme tailored for selling electronics and gadgets. Ideal for both small shops and large megastores, Ecommax offers a sleek, responsive design that ensures your products stand out on any device. With its customizable layouts and powerful WooCommerce integration, this theme allows you to effortlessly create a professional online store.
+Version: 1.2.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ecommax
+Tags: e-commerce, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, custom-header, rtl-language-support, theme-options, block-styles
+
+Copyright (C) Year Risingbamboo
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*
+! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
