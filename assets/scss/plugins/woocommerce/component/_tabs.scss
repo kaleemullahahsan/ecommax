@@ -1,0 +1,145 @@
+/**
+ * Tabs
+ */
+ .woocommerce-tabs {
+ 	ul.tabs {
+ 		list-style: none;
+ 		text-align: left;
+		border-bottom: 1px solid var(--rbb-general-button-bg-color);
+ 		li {
+			position: relative;
+			padding-bottom: 18px;
+ 			&:first-child {
+ 				margin-left: 0px;
+ 			}
+
+ 			a {
+ 				transition: all 0.35s linear;
+ 			}
+			&::before{
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width: 0%;
+				height: 3px;
+				background-color: var(--rbb-general-link-hover-color);
+				transition: width 0.35s linear;
+			}
+ 			&:hover,
+ 			&.active {
+				&::before{
+					width: 100%;
+				}
+ 				a {
+ 					color: var(--rbb-general-link-hover-color);
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	.panel {
+ 		h2:first-of-type {
+ 			margin-bottom: 1em;
+ 		}
+ 	}
+
+ 	.woocommerce-tabs-panel {
+ 		h2 {
+ 			display: none;
+ 		}
+ 	}
+ }
+
+ .description-bottom {
+ 	padding-top: 40px;
+ 	&:after {
+ 		content: "";
+ 		clear: both;
+ 		display: table;
+ 	}
+ 	h3 {
+ 		font-size: 18px;
+ 		color: var(--rbb-title-color);
+ 		line-height: 1;
+ 	}
+ 	ul {
+ 		padding-top: 30px;
+
+ 		li {
+ 			padding-left: 19px;
+ 			position: relative;
+ 			margin-bottom: 12px;
+
+ 			&:before {
+ 				content: "";
+ 				width: 8px;
+ 				height: 8px;
+ 				border: 1px solid #bdbdbd;
+ 				border-radius: 100%;
+ 				position: absolute;
+ 				left: 0px;
+ 				top: 50%;
+ 				-moz-transform: translateY(-50%);
+ 				-webkit-transform: translateY(-50%);
+ 				-o-transform: translateY(-50%);
+ 				-ms-transform: translateY(-50%);
+ 				transform: translateY(-50%);
+ 			}
+ 		}
+ 	}
+ 	.description-right {
+ 		padding-left: 45px;
+ 		ul {
+ 			padding-top: 30px;
+ 		}
+ 	}
+ 	@media (max-width: 767px) {
+ 		> div {
+ 			width: 100% !important;
+ 			&.description-right {
+ 				padding-left: 0px;
+ 				padding-top: 30px;
+ 			}
+ 		}
+ 	}
+ }
+ .woocommerce-tabs-panel,
+ .product-single__tabs {
+ 	.woocommerce-product-attributes {
+ 		width: 100%;
+ 		tr {
+ 			&:nth-child(odd) {
+ 				background-color: #f2f2f2;
+ 			}
+ 			th,
+ 			td {
+ 				padding: 10px;
+ 				height: 50px;
+ 				text-transform: capitalize;
+ 			}
+ 		}
+		.woocommerce-product-attributes-item__value{
+			p{
+				margin-bottom: 0;
+			}
+		}
+ 	}
+ }
+ .woosc-quick-table-products{
+	.woosc_table{
+		.woosq-link{
+			font-size: 12px;
+			font-weight: 600;
+		}
+		tbody{
+			tr{
+				td{
+					p{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+ }
