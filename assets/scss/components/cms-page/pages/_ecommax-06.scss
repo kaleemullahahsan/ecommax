@@ -1,0 +1,178 @@
+.ecommax-home6 {
+	.policy-1 {
+		.elementor-image-box-wrapper {
+			.elementor-image-box-img {
+				background-color: #fff;
+			}
+		}
+	}
+
+	.rbb_woo_products {
+		&.layout-3 {
+			.rbb-slick-carousel {
+				.slick-dots {
+					position: static;
+					margin-top: 46px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					li {
+						margin: 0 7px;
+
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background-color: #000;
+							}
+						}
+
+						&:hover {
+							button {
+								background-color: #000;
+							}
+						}
+
+						button {
+							background-color: rgba(0, 0, 0, 0.1);
+						}
+					}
+				}
+			}
+		}
+
+		&.layout-2 {
+			>div {
+				padding: 0;
+			}
+
+			.rbb-slick-carousel {
+				.slick-dots {
+					position: static;
+					margin-top: 30px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					li {
+						margin: 0 7px;
+
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+
+						&:hover {
+							button {
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+
+						button {
+							background-color: rgba(255, 255, 255, 0.5);
+						}
+					}
+				}
+			}
+
+			>.container {
+				width: 100% !important;
+				min-width: 100%;
+				padding: 0 !important;
+			}
+
+			.block_content {
+				.block_heading {
+					.arrow-custom {
+						.slick-arrow {
+
+							&::before,
+							&::after {
+								background: #fff;
+							}
+
+							&:hover {
+
+								&::before,
+								&::after {
+									background: var(--rbb-general-primary-color);
+								}
+							}
+						}
+					}
+
+					.button-collection {
+						>a {
+							color: #fff;
+
+							&:hover {
+								color: var(--rbb-general-primary-color);
+							}
+						}
+					}
+				}
+			}
+
+			.item-product {
+				.product_info {
+					margin-top: 8px !important;
+				}
+			}
+		}
+	}
+
+	.rbb_posts {
+		&.layout-3 {
+			.main-blog-right {
+				.blog_item {
+					.blog_image {
+						margin-right: 30px;
+
+						@media (max-width: 767px) {
+							margin-right: 0;
+						}
+					}
+
+					.blog_info {
+						padding-left: 0 !important;
+						margin-left: 0 !important;
+
+						@media (max-width: 767px) {
+							padding-left: 20px !important;
+							padding-right: 10px !important;
+						}
+
+						.blog_title,
+						.content {
+							padding-right: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1665px) and (min-width: 1365px) {
+		.rbb_woo_products {
+			&.layout-3 {
+				.block_product_content {
+					margin-right: -50vw;
+					overflow: hidden;
+
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 85% !important;
+						margin: -20px -5px !important;
+						padding: 20px 5px !important;
+
+						.slick-list {
+							overflow: initial;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,133 @@
+// .................homepage ecommax-02.................
+.ecommax-home2 {
+	.footer-newsletter {
+		margin-top: 0 !important;
+	}
+
+	.rbb-boxshadow {
+		.banner-1 {
+			box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 0.08);
+		}
+	}
+
+	.rbb_woo_products {
+		&.layout-3 {
+			.slick-dots {
+				bottom: -37px;
+
+				li {
+					button {
+						background-color: #fff;
+					}
+
+					&.slick-active {
+						button {
+							background-color: var(--rbb-general-secondary-color);
+						}
+					}
+				}
+			}
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				.block_product_content {
+					margin-right: -50vw;
+					padding-right: 50vw;
+					overflow: hidden;
+
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 70% !important;
+
+						.slick-list {
+							overflow: initial;
+							padding-bottom: 40px;
+						}
+					}
+
+					.slick-dots {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						position: absolute;
+						left: 20%;
+						bottom: -8px;
+					}
+				}
+			}
+		}
+	}
+
+	.rbb_posts {
+		&.layout-2 {
+			@media (max-width: 1366px) and (min-width: 1024px) {
+				.block_content_posts {
+					margin-right: -50vw;
+					padding-right: 50vw;
+					overflow: hidden;
+
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 70% !important;
+						margin: -20px !important;
+						padding: 30px 20px !important;
+
+						.slick-list {
+							overflow: initial;
+						}
+					}
+
+					.slick-dots {
+						display: none !important;
+						align-items: center;
+						justify-content: center;
+						position: absolute;
+						left: 100%;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1665px) and (min-width: 1365px) {
+		.rbb_woo_products {
+			&.layout-3 {
+				.block_product_content {
+					margin-right: -50vw;
+					overflow: hidden;
+
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 85% !important;
+						margin: -20px -5px !important;
+						padding: 20px 5px !important;
+
+						.slick-list {
+							overflow: initial;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 475px) {
+		.rbb_woo_products {
+			&.layout-list {
+				.block_title_tab {
+					.arrow-custom {
+						display: none;
+					}
+				}
+			}
+
+			&.layout-2 {
+				.item-product {
+					.item-countdown {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

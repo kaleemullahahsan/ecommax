@@ -1,0 +1,158 @@
+.ecommax-home7 {
+	.rbb-elementor-slider {
+		&.single.layout-5 {
+			padding-bottom: 0;
+
+			.group-custom-button {
+				bottom: 20px;
+			}
+		}
+	}
+
+	.rbb-banner {
+		&.banner-8 {
+			.block_heading {
+				.desc {
+					color: var(--rbb-general-heading-color);
+				}
+			}
+
+			.button-banner {
+				color: var(--rbb-general-heading-color);
+				font-weight: 600;
+
+				.button-icon {
+					background: var(--rbb-general-heading-color);
+					color: #fff !important;
+
+					&:hover {
+						background-color: var(--rbb-general-primary-color);
+					}
+				}
+			}
+		}
+	}
+
+	.rbb-testimonial {
+		&.layout-2 {
+			.block_heading {
+				.title {
+					margin-bottom: 0;
+				}
+			}
+
+			.block_content_testimonial {
+				.rbb-slick-carousel {
+					.slick-dots {
+						bottom: -26px;
+
+						li {
+							&.slick-active {
+								button {
+									transform: scale(1);
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.rbb_woo_products {
+		&.layout-list {
+			.block_heading {
+				margin-bottom: 32px;
+			}
+
+			.rbb-slick-carousel {
+				.slick-dots {
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					li {
+						button {
+							background: rgba(24, 24, 24, 0.1);
+						}
+
+						&:hover,
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background: var(--rbb-general-heading-color);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.rbb_posts {
+		&.layout-2 {
+			.block_heading {
+				margin-bottom: 38px;
+			}
+
+			.rbb-slick-carousel {
+				.slick-dots {
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					li {
+						button {
+							background: rgba(24, 24, 24, 0.1);
+						}
+
+						&:hover {
+							button {
+								transform: scale(1);
+								background-color: var(--rbb-general-heading-color);
+							}
+						}
+
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background-color: var(--rbb-general-heading-color);
+							}
+						}
+					}
+				}
+			}
+
+			@media (max-width: 1366px) and (min-width: 1024px) {
+				.block_content_posts {
+					margin-right: -50vw;
+					padding-right: 50vw;
+					overflow: hidden;
+
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 70% !important;
+						margin: -20px !important;
+						padding: 30px 20px !important;
+
+						.slick-list {
+							overflow: initial;
+						}
+					}
+
+					.slick-dots {
+						display: none !important;
+						align-items: center;
+						justify-content: center;
+						position: absolute;
+						left: 100%;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+// .................homepage ecommax-02.................
+.ecommax-home3 {
+	.rbb-boxshadow {
+		.banner-1 {
+			box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 0.08);
+		}
+	}
+	.rbb-image-swiper {
+		.elementor-image-carousel-wrapper {
+			.swiper-pagination-horizontal {
+				left: -50% !important;
+			}
+		}
+		@media (max-width: 880px) {
+			.elementor-image-carousel-wrapper {
+				.swiper-pagination-horizontal {
+					left: 0% !important;
+					top: 100%;
+				}
+			}
+		}
+	}
+	.rbb_posts {
+		&.layout-2 {
+			@media (max-width: 1366px) and (min-width: 1024px) {
+				.block_content_posts {
+					margin-right: -50vw;
+					padding-right: 50vw;
+					overflow: hidden;
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 70% !important;
+						margin: -20px !important;
+						padding: 30px 20px !important;
+						.slick-list {
+							overflow: initial;
+						}
+					}
+					.slick-dots {
+						display: none !important;
+						align-items: center;
+						justify-content: center;
+						position: absolute;
+						left: 100%;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,239 @@
+.ecommax-home4 {
+	.policy-1 {
+		.elementor-image-box-wrapper {
+			.elementor-image-box-img {
+				background-color: #fff;
+			}
+		}
+	}
+	.rbb_woo_products {
+		&.layout-3 {
+			.block_content {
+				.block_heading {
+					margin-bottom: 41px;
+					.arrow-custom {
+						.slick-arrow {
+							&::before,
+							&::after {
+								background: #fff;
+							}
+							&:hover {
+								&::before,
+								&::after {
+									background: var(--rbb-general-primary-color);
+								}
+							}
+						}
+					}
+					.button-collection {
+						>a {
+							color: #fff;
+							&:hover {
+								color: var(--rbb-general-primary-color);
+							}
+						}
+					}
+				}
+			}
+			.rbb-slick-carousel {
+				.slick-dots {
+					position: static;
+					margin-top: 30px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					li {
+						margin: 0 7px;
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+						&:hover {
+							button {
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+						button {
+							background-color: rgba(255, 255, 255, 0.5);
+						}
+					}
+				}
+			}
+		}
+		&.layout-2 {
+			>div {
+				padding: 0;
+			}
+			.rbb-slick-carousel {
+				.slick-dots {
+					position: static;
+					margin-top: 30px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					li {
+						margin: 0 7px;
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+						&:hover {
+							button {
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+						button {
+							background-color: rgba(255, 255, 255, 0.5);
+						}
+					}
+				}
+			}
+			>.container {
+				width: 100% !important;
+				min-width: 100%;
+				padding: 0 !important;
+			}
+			.block_content {
+				.block_heading {
+					.arrow-custom {
+						.slick-arrow {
+							&::before,
+							&::after {
+								background: #fff;
+							}
+							&:hover {
+								&::before,
+								&::after {
+									background: var(--rbb-general-primary-color);
+								}
+							}
+						}
+					}
+					.button-collection {
+						>a {
+							color: #fff;
+							&:hover {
+								color: var(--rbb-general-primary-color);
+							}
+						}
+					}
+				}
+			}
+			.item-product {
+				.product_info {
+					margin-top: 8px !important;
+				}
+			}
+		}
+	}
+	.rbb-elementor-slider {
+		&.multiple {
+			&.default {
+				.block_slide {
+					.block__content {
+						border: none;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1200px) and (min-width: 881px) {
+		.rbb_woo_products {
+			&.layout-5 {
+				.rbb-slick-carousel {
+					margin-top: 0;
+				}
+			}
+			&.layout-3 {
+				padding-bottom: 40px;
+				.block_product_content {
+					margin-right: -50vw;
+					padding-right: 50vw;
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 62% !important;
+						margin: -20px -5px !important;
+						padding: 20px 5px !important;
+						.slick-list {
+							overflow: initial;
+							.slick-slide {
+								padding: 0 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1024px) and (min-width: 768px) {
+		.rbb_posts {
+			&.default {
+				.rbb-slick-carousel {
+					margin: -15px -10px;
+					padding: 15px 10px;
+				}
+			}
+		}
+	}
+	@media (max-width: 880px) and (min-width: 768px) {
+		.rbb_woo_products {
+			&.layout-5 {
+				.rbb-slick-carousel {
+					margin-top: 0;
+				}
+			}
+			&.layout-3 {
+				padding-bottom: 40px;
+				.block_product_content {
+					margin-right: -50vw;
+					padding-right: 50vw;
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 75% !important;
+						margin: -20px !important;
+						padding: 20px 5px !important;
+						.slick-list {
+							overflow: initial;
+							.slick-slide {
+								padding: 0 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		.rbb_woo_products {
+			&.layout-list {
+				>.container {
+					width: 100%;
+					min-width: 100%;
+					padding: 0;
+				}
+			}
+		}
+	}
+	@media (max-width: 475px) {
+		.rbb_woo_products {
+			&.layout-list {
+				.block_title_tab {
+					.arrow-custom {
+						display: none;
+					}
+				}
+			}
+			&.layout-2 {
+				.item-product {
+					.item-countdown {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

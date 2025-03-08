@@ -1,0 +1,11 @@
+.ecommax-home9 {
+	.rbb_woo_products {
+		&.layout-5 {
+			@media (max-width: 1199px) {
+				.rbb-slick-carousel {
+					padding-top: 20px;
+				}
+			}
+		}
+	}
+}

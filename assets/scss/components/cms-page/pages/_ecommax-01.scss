@@ -1,0 +1,48 @@
+body {
+	&:not(.home) {
+		.category-mobile {
+			display: none;
+		}
+	}
+
+	.rbb-elementor-slider {
+		&.layout-3 {
+			.block_slide_content {
+				padding: 0;
+			}
+		}
+	}
+
+	.rbb_woo_products {
+		&.default {
+			.rbb-slick-carousel {
+				margin-top: -16px;
+
+				.item-product {
+					.product_info {
+						margin-top: 1px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ecommax-home1 {
+	.rbb-elementor-slider {
+		&.single {
+			&.default {
+				@media (min-width: 1200px) {
+					.rbb-slick-carousel {
+						&:not(.slick-initialized) {
+							.item-content {
+								height: 100vh;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

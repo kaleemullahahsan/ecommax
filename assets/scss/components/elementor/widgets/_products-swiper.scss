@@ -1,0 +1,23 @@
+.rbb_woo_products {
+	&.layout-2 {
+		.swiper-slide {
+			height: auto;
+			.item {
+				height: 100%;
+			}
+		}
+		.swiper-scrollbar {
+			left: 0;
+			width: 100%;
+			height: 8px;
+			bottom: 9px;
+			z-index: 2;
+			position: relative;
+			background: var(--rbb-general-button-bg-color);
+			.swiper-scrollbar-drag {
+				cursor: pointer;
+				background: var(--rbb-general-secondary-color);
+			}
+		}
+	}
+}

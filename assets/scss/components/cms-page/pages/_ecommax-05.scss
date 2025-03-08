@@ -1,0 +1,207 @@
+.ecommax-home5 {
+	.policy-1 {
+		.elementor-image-box-wrapper {
+			.elementor-image-box-img {
+				background-color: #fff;
+			}
+		}
+	}
+	.rbb_woo_products {
+		&.layout-3 {
+			.block_content {
+				.block_title_tab {
+					z-index: 20;
+				}
+				.block_heading {
+					margin-bottom: 47px;
+					.arrow-custom {
+						.slick-arrow {
+							&::before,
+							&::after {
+								background: #fff;
+							}
+							&:hover {
+								&::before,
+								&::after {
+									background: var(--rbb-general-primary-color);
+								}
+							}
+						}
+					}
+					.button-collection {
+						>a {
+							color: #fff;
+							&:hover {
+								color: var(--rbb-general-primary-color);
+							}
+						}
+					}
+				}
+			}
+			.block_product_content {
+				margin-right: -50vw;
+				padding-right: 36vw;
+				overflow: hidden;
+				.rbb-slick-carousel {
+					overflow: initial;
+					width: 68% !important;
+					margin: -20px -5px !important;
+					padding: 20px 5px !important;
+					.slick-list {
+						overflow: initial;
+					}
+				}
+			}
+			.rbb-slick-carousel {
+				.slick-dots {
+					position: static;
+					margin-top: 47px;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					li {
+						margin: 0 7px;
+						&:first-child {
+							margin-left: 0;
+						}
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+						&:hover {
+							button {
+								background-color: var(--rbb-general-secondary-color);
+							}
+						}
+						button {
+							background-color: rgba(255, 255, 255, 0.5);
+						}
+					}
+				}
+			}
+		}
+	}
+	.rbb-image-swiper {
+		.elementor-image-carousel-wrapper {
+			.swiper-pagination-horizontal {
+				left: -50% !important;
+			}
+		}
+		@media (max-width: 880px) {
+			.elementor-image-carousel-wrapper {
+				.swiper-pagination-horizontal {
+					left: 0% !important;
+					top: 100%;
+				}
+			}
+		}
+	}
+	.rbb_posts {
+		&.layout-2 {
+			@media (max-width: 1366px) and (min-width: 1024px) {
+				.block_content_posts {
+					margin-right: -50vw;
+					padding-right: 50vw;
+					overflow: hidden;
+					.rbb-slick-carousel {
+						overflow: initial;
+						width: 70% !important;
+						margin: -20px !important;
+						padding: 30px 20px !important;
+						.slick-list {
+							overflow: initial;
+						}
+					}
+					.slick-dots {
+						display: none !important;
+						align-items: center;
+						justify-content: center;
+						position: absolute;
+						left: 100%;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1199px) and (min-width: 1024px) {
+		.rbb_woo_products {
+			&.layout-3 {
+				.block_product_content {
+					margin-right: 0 !important;
+					padding-right: 0 !important;
+					.rbb-slick-carousel {
+						width: 90% !important;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1023px) and (min-width: 881px) {
+		.rbb_woo_products {
+			&.layout-3 {
+				.block_product_content {
+					margin-right: -20vw !important;
+					padding-right: 10vw !important;
+					.rbb-slick-carousel {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 880px) and (min-width: 768px) {
+		.rbb_woo_products {
+			&.layout-3 {
+				.block_product_content {
+					margin-right: -20vw !important;
+					padding-right: 10vw !important;
+					.rbb-slick-carousel {
+						width: 80% !important;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 767px) and (min-width: 475px) {
+		.rbb_woo_products {
+			&.layout-3 {
+				.block_product_content {
+					margin-right: -20vw !important;
+					padding-right: 10vw !important;
+					.rbb-slick-carousel {
+						width: 75% !important;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 474px) {
+		.rbb_woo_products {
+			&.layout-3 {
+				.block_product_content {
+					margin-right: -10px !important;
+					padding-right: 0 !important;
+					.rbb-slick-carousel {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 767px) {
+
+		.rbb_heading_toggle {
+			.elementor-widget-container {
+				.elementor-heading-title {
+					&::after,
+					&::before {
+						background-color: var(--rbb-general-heading-color) !important;
+					}
+				}
+			}
+		}
+	}
+}

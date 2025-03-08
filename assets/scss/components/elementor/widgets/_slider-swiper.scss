@@ -1,0 +1,16 @@
+@media (min-width: 1740px) {
+	.rbb-elementor-slider {
+		&.multiple {
+
+			.bg-left,
+			.bg-right {
+				display: block;
+
+				img {
+					-webkit-animation: iconbanner 3s linear infinite;
+					animation: iconbanner 3s linear infinite;
+				}
+			}
+		}
+	}
+}

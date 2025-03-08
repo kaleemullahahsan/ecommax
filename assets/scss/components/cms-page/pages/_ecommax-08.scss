@@ -1,0 +1,119 @@
+.ecommax-home8 {
+	.rbb-elementor-slider {
+		&.multiple {
+			&.layout-5 {
+				.rbb-slick-carousel {
+					.slick-list {
+						.slick-slide {
+							.block__content {
+								.block_content_text {
+									border: 1px solid #eee;
+									border-top: none;
+									border-left: none;
+								}
+							}
+						}
+
+						.slick-active {
+							&:last-child {
+								.block__content {
+									.block_content_text {
+										border-right: 1px solid #eee !important;
+									}
+								}
+							}
+						}
+
+						.slick-current {
+							.block__content {
+								.block_content_text {
+									border-left: 1px solid #eee !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	.rbb_woo_products {
+		&.layout-5 {
+			@media (max-width: 1199px) {
+				.rbb-slick-carousel {
+					padding-top: 20px;
+				}
+			}
+		}
+
+		&.layout-2 {
+			.block_heading {
+				margin-bottom: 0;
+
+				.title {
+					margin-bottom: 10px;
+				}
+			}
+
+			.rbb-slick-carousel {
+				margin-top: -10px;
+				margin-left: -10px;
+				margin-right: -10px;
+				padding-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+
+				.slick-dots {
+					position: static;
+					margin-top: 16px;
+
+					li {
+						button {
+							background: rgba(255, 255, 255, 0.5);
+						}
+
+						&:hover,
+						&.slick-active {
+							button {
+								transform: scale(1);
+								background: var(--rbb-general-secondary-color);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.rbb-banner {
+		&.banner-2 {
+			.block_heading {
+				.desc {
+					color: var(--rbb-general-heading-color);
+				}
+			}
+		}
+	}
+
+	.rbb-testimonial {
+		&.layout-2 {
+			.block_content_testimonial {
+				.rbb-slick-carousel {
+					.slick-dots {
+						bottom: -26px;
+
+						li {
+							&.slick-active {
+								button {
+									transform: scale(1);
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
